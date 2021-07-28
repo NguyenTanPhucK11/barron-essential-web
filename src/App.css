@@ -2,7 +2,7 @@ html {
   min-height: 100%;
 }
 body {
-  background: url(/img/img.jpeg) no-repeat;
+  /* background: url(/img/img.jpeg) no-repeat; */
   background-size: 100%;
   background-position: bottom;
   /* background-color: ; */
