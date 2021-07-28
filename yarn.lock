@@ -4327,7 +4327,7 @@
   dependencies:
     "locate-path" "^2.0.0"
 
-"firebase@^8.3.1":
+"firebase@^8.8.0":
   "integrity" "sha512-c4ckTSpmVa7delz1HEEqQJfZYwhEWgXgQgVFcPpjUAc0hvMynS8W37SyufxfBcIki2iPfduWV/RrDhM49hKTbw=="
   "resolved" "https://registry.npmjs.org/firebase/-/firebase-8.8.0.tgz"
   "version" "8.8.0"
@@ -8716,6 +8716,11 @@
     "immer" "8.0.1"
     "lodash" "^4.17.20"
     "reduce-reducers" "^1.0.4"
+
+"redux-thunk@^2.3.0":
+  "integrity" "sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw=="
+  "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz"
+  "version" "2.3.0"
 
 "redux@^4.0.0", "redux@^4.1.0":
   "integrity" "sha512-uI2dQN43zqLWCt6B/BMGRMY6db7TTY4qeHHfGeKb3EOhmOKjU3KdWvNLJyqaHRksv/ErdNH7cFZWg9jXtewy4g=="
