@@ -6,9 +6,7 @@ body {
   font-size: 100%;
   background-color: red;
 }
-.btn-primary {
-  margin: 3px;
-}
+
 .timer-container {
   color: white;
   width: 100vw;
@@ -65,4 +63,10 @@ section p:first-child,
     margin-right: 2em;
     padding: 3em 1em;
   }
+}
+
+.inline {
+  display: inline-block;
+  border: 1px solid red;
+  margin: 10px;
 }

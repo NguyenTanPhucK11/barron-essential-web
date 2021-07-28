@@ -6,8 +6,9 @@ import Button from "react-bootstrap/Button";
 import Page from "./components/Page";
 function App() {
   return (
-    <div className="body-style">
+    <div className="">
       <Page />
+
     </div>
   );
 }

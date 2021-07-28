@@ -65,3 +65,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .body-style {
   padding: 10px;
 }
+.btn-primary {
+  margin: 3px;
+  padding: 0px;
+}
+
+.form-control {
+  margin-top: 3px;
+}
