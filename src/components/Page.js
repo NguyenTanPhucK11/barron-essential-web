@@ -102,20 +102,21 @@ function Random() {
           onClick={() => {
             list.map((item, index) => {
               if (
-                document.getElementById("ipVocab" + index).value == item.def
+                document.getElementById("ipVocab" + index).value == item.word
               ) {
                 document.getElementById("ipVocab" + index).style.color =
                   "green";
-                  score++;
-              } else
+                score++;
+              } else {
                 document.getElementById("ipVocab" + index).style.color = "red";
+                document.getElementById("word" + index).style.display = "inline-block"
+              }
 
               if (document.getElementById("ipVocab" + index).value == "")
                 document.getElementById("ipVocab" + index).value = "x";
             });
             // document.getElementById("ipVocab").value = "";
             setScore(score);
-
           }}
         >
           Finish
@@ -128,15 +129,15 @@ function Random() {
         <div key={index.toString()} className="inline w-50">
           <div style={{ display: "inline-block" }}>
             <Button className="btn-primary" variant="primary">
-              {index + 1}, {item.word}
+              {index + 1}, {item.def}
             </Button>
           </div>
           <div style={{ display: "inline-block" }}>
             <input type="" className="form-control" id={"ipVocab" + index} />
           </div>
-          <div style={{ display: "inline-block" }}>
+          <div style={{ display: "none" }} id = {"word" + index}>
             <Button className="btn-primary" variant="primary">
-              {item.def}
+              {item.word}
             </Button>{" "}
           </div>
         </div>
