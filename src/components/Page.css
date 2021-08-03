@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 100%;
-  background-color: red;
-}
-
 .timer-container {
   color: white;
   width: 100vw;

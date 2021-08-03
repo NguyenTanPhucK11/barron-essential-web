@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
+import Button from "@material-ui/core/Button";
 import { stockData } from "../data";
 
 function NewVocab() {
   var indents = [
     <div style={{}}>
       <div>Practice memorizing vocabulary BARRONS IELTS</div>
-      <Button className="btn-primary" variant="primary">
+      <Button className="all-button" style={{ margin: "3px" }}>
         New Vocab
       </Button>
-      <Button className="btn-primary" variant="primary">
+      <Button
+        variant="contained"
+        className="all-button"
+        style={{ margin: "3px" }}
+        color="primary"
+      >
         Start
       </Button>
     </div>,
@@ -40,7 +46,7 @@ console.log("lengthStock", stockData.length);
 //       <div style={{ display: "inline-block" }}>
 //         <Button
 //           class="btn-primary"
-//           variant="primary"
+//
 //           onClick={() => onClick(index)}
 //         >
 //           {index + 1}
@@ -56,8 +62,10 @@ const Lesson = ({ setLesson }) => {
   return stockData.map((item, index) => (
     <div key={index.toString()} style={{ display: "inline-block" }}>
       <Button
-        className="btn-primary"
-        variant="primary"
+        variant="contained"
+        className="all-button"
+        color="primary"
+        style={{ margin: "3px" }}
         onClick={() => setLesson(index)}
       >
         {index + 1}
@@ -82,8 +90,10 @@ function Random() {
       <Lesson setLesson={onClick} />
       <div>
         <Button
-          className="btn-primary"
-          variant="primary"
+          variant="contained"
+          className="all-button"
+          style={{ margin: "3px" }}
+          color="primary"
           onClick={() => {
             let tempt = [...list];
             tempt.sort(() => Math.random() - 0.5);
@@ -97,8 +107,10 @@ function Random() {
           Random
         </Button>
         <Button
-          className="btn-primary"
-          variant="primary"
+          variant="contained"
+          className="all-button"
+          style={{ margin: "3px" }}
+          color="primary"
           onClick={() => {
             list.map((item, index) => {
               if (
@@ -109,7 +121,8 @@ function Random() {
                 score++;
               } else {
                 document.getElementById("ipVocab" + index).style.color = "red";
-                document.getElementById("word" + index).style.display = "inline-block"
+                document.getElementById("word" + index).style.display =
+                  "inline-block";
               }
 
               if (document.getElementById("ipVocab" + index).value == "")
@@ -121,22 +134,37 @@ function Random() {
         >
           Finish
         </Button>
-        <Button className="btn-primary" variant="primary">
+        <Button
+          variant="contained"
+          className="all-button"
+          style={{ margin: "3px" }}
+          color="primary"
+        >
           {count} / 20
         </Button>
       </div>
       {list.map((item, index) => (
         <div key={index.toString()} className="inline w-50">
           <div style={{ display: "inline-block" }}>
-            <Button className="btn-primary" variant="primary">
+            <Button
+              variant="contained"
+              className="all-button"
+              style={{ margin: "3px" }}
+              color="primary"
+            >
               {index + 1}, {item.def}
             </Button>
           </div>
           <div style={{ display: "inline-block" }}>
             <input type="" className="form-control" id={"ipVocab" + index} />
           </div>
-          <div style={{ display: "none" }} id = {"word" + index}>
-            <Button className="btn-primary" variant="primary">
+          <div style={{ display: "none" }} id={"word" + index}>
+            <Button
+              variant="contained"
+              className="all-button"
+              style={{ margin: "3px" }}
+              color="primary"
+            >
               {item.word}
             </Button>{" "}
           </div>
@@ -163,7 +191,7 @@ function Page() {
   // var indents = NewVocab();
   // for (var i = 0; i < 10; i++) {
   //   indents.push(
-  //     <Button class="btn-primary" variant="primary">
+  //     <Button variant="contained" className = "all-button" color="primary" class="btn-primary">
   //       {i + 1}
   //     </Button>
   //   );
@@ -177,10 +205,20 @@ function RandomVocab() {
   for (var i = 0; i < 10; i++) {
     indents.push(
       <div>
-        <Button className="btn-primary" variant="primary">
+        <Button
+          variant="contained"
+          className="all-button"
+          style={{ margin: "3px" }}
+          color="primary"
+        >
           {i + 1}
         </Button>
-        <Button className="btn-primary" variant="primary">
+        <Button
+          variant="contained"
+          className="all-button"
+          style={{ margin: "3px" }}
+          color="primary"
+        >
           Vocab
         </Button>
       </div>
