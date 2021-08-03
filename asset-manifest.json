@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/barron-essential-we/static/css/main.568cdeb1.chunk.css",
-    "main.js": "/barron-essential-we/static/js/main.ae9f915d.chunk.js",
-    "main.js.map": "/barron-essential-we/static/js/main.ae9f915d.chunk.js.map",
+    "main.js": "/barron-essential-we/static/js/main.84f5f375.chunk.js",
+    "main.js.map": "/barron-essential-we/static/js/main.84f5f375.chunk.js.map",
     "runtime-main.js": "/barron-essential-we/static/js/runtime-main.43d6865b.js",
     "runtime-main.js.map": "/barron-essential-we/static/js/runtime-main.43d6865b.js.map",
     "static/js/2.8bbbf525.chunk.js": "/barron-essential-we/static/js/2.8bbbf525.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.43d6865b.js",
     "static/js/2.8bbbf525.chunk.js",
     "static/css/main.568cdeb1.chunk.css",
-    "static/js/main.ae9f915d.chunk.js"
+    "static/js/main.84f5f375.chunk.js"
   ]
 }
