@@ -114,7 +114,7 @@ export const stockData = [
     },
     {
       word: "27",
-      def: "2811111111111",
+      def: "28",
     },
   ],
 ];
